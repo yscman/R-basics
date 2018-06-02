@@ -22,3 +22,16 @@ rename(dados,quest1=Q1,quest2=Q2)
 #UTILIZANDO O COMANDO PIPE %>%
 dados %>% select(Q1)
 dados %>% rename(quest1=Q1)
+
+#FUNÇÃO FILTER
+
+filter(dados,Q5=="S",Q1>20)
+filter(dados,Q5=="S",Q1>20,Q9==6)
+filter(dados,Q5=="S",Q1>20 & Q9==6)
+filter(dados,Q5=="S",Q1>20 | Q9==6)
+
+dados %>% filter (Q1>20,Q9>=6)
+
+#FUNÇÃO SLICE
+slice(dados,1:10)
+dados %>% slice (1:10)
