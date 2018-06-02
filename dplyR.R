@@ -1,12 +1,10 @@
 #PACOTE
-if(require(dplyr)==F) install.packages("dplyr2")
+if(require(dplyr)==F) install.packages("dplyr")
 
 #DADOS
 dados=read.csv("http://mwstat.com/andersonara/IVD/dados1.csv",
                sep=";",stringsAsFactors = T)
-
 names(dados)
-
 
 #FUNÇÃO SELECT
 select(dados,Q1)
