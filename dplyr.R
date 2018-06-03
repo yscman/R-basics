@@ -40,6 +40,7 @@ dados %>% filter (Q1>20,Q9>=6)
 slice(dados,1:10)
 dados %>% slice (1:10)
 
+
 #FUNÇÃO MUTATE
 mutate(dados,Q10=Q6+Q9)
 
