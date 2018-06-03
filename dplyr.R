@@ -40,6 +40,7 @@ dados %>% filter (Q1>20,Q9>=6)
 slice(dados,1:10)
 dados %>% slice (1:10)
 
+
 #FUNÇÃO MUTATE
 mutate(dados,Q10=Q6+Q9)
 
@@ -50,4 +51,5 @@ transmute(dados,Q1,Q10=Q6+Q9)
 
 dados %>% transmute(Q1,Q10=Q6+Q9)
 dados %>% transmute(Idade_c=if_else(Q1>mean(Q1),"Acima","Abaixo"))
+
 
