@@ -48,6 +48,6 @@ dados %>% mutate(Idade_c=if_else(Q1>mean(Q1),"Acima","Abaixo"))
 #FUNÇÃO TRANSMUTE
 transmute(dados,Q1,Q10=Q6+Q9)
 
-dados %>% transmute(Q1,Q10=Q6+Q9)
+dados %>% transmute(Q1,Q2,Q10=Q6+Q9)
 dados %>% transmute(Idade_c=if_else(Q1>mean(Q1),"Acima","Abaixo"))
 
